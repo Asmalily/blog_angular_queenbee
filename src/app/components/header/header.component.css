@@ -1,0 +1,28 @@
+.navbar{
+    font-size: 18px;
+    width: 2154px;
+    background-color: #f6f6f6;
+    margin: 1px -23px;
+    overflow-x: hidden;
+}
+.nav-link{
+color: black;
+height:min-content;
+
+}
+.nav-item{
+    margin-right: 80px;
+}
+.nav-link:hover {
+    color: rgba(87, 75, 8, 0.314);
+}
+.navbar-nav {
+    margin: 1px -80px;
+}
+.fa-brands{
+    padding: 10px; float: left;
+}
+.social{
+    padding-left: 10px;
+    margin: 1px 36px;
+}

@@ -1,0 +1,78 @@
+.carousel {
+  margin-top: -90px;
+  display: flex;
+  gap: .9em;width: 1200px;left: -100px;
+  
+/* adds scrolling for the element: */
+  overflow-x: scroll;
+/* removes the horizontal scrollbar: */
+  scrollbar-width: none;
+}
+
+.carousel--item {
+/* carousel item should have min-width declared: */
+  min-width: 400px;
+/* carousel item should have defined height: */
+  height: 540px;
+  
+  border-radius: .4em;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.85;
+  transition: 300ms ease;
+}
+
+.carousel--item:hover {
+  opacity: 1;
+  transform: scale(1.01);
+  transform-origin: bottom;
+}
+
+.one {
+  background-image: url('https://i.ibb.co/jGYsLgx/pexels-alesia-kozik-7797445.jpg');
+}
+
+.two {
+  background-image: url('https://images.unsplash.com/photo-1650142700236-f1889e0193b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60');
+}
+
+.three {
+  
+  background-image: url('https://i.ibb.co/sqDbZkz/pexels-tara-winstead-6690866.jpg');
+}
+
+.four {
+  background-image: url('https://i.ibb.co/cywCZ1j/pexels-sarah-chai-7282427.jpg');
+
+}
+
+.five {
+  background-image: url('https://i.ibb.co/MsVRz4k/pexels-cup-of-couple-6956912.jpg');
+}
+
+body {
+  background-color: BlanchedAlmond;
+}
+
+.textbox{
+ background-color: rgb(255, 255, 255);
+ margin-top:  450px;width: 320px;text-align: center;margin-left: 40px;
+ height: 100px;
+}
+h4{
+  text-align: center;margin-left: 80px;background-color: rgb(194, 181, 153);width: 50%;
+}
+
+
+
+/* subcri */
+
+
+/* card */
+
+
+
+.card{
+width: 800px;margin-top: 90px;
+font-family: 'Cairo', sans-serif;;
+}

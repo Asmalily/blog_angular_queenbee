@@ -1,0 +1,48 @@
+<!-- carosel -->
+<div class="carousel ">
+  <div class="carousel--item one"><div class="textbox">
+    <h4 >
+    مراجعه منتجات </h4><span>بنعملك مراجعه لمنتجات جربناها </span> </div></div>
+  <div class="carousel--item two"><div class="textbox">
+    <h4 >
+    وصفات طعام </h4><span>وصفات سهله و سريعه و صحيه</span> </div></div>
+  <div class="carousel--item three"><div class="textbox">
+    <h4 >
+      عناية شخصية </h4><span></span>بنعرفك علي طرق و اساليب الاهتمام بنفسك </div></div>
+  <div class="carousel--item four"><div class="textbox">
+    <h4 >
+      عناية بالمنزل </h4><span></span>البيت دايما محتاج تنضيف و ترتيب بس كمان يكون بسهوله ! </div></div>
+  <div class="carousel--item five"><div class="textbox">
+    <h4 >
+  تسوق و عروض </h4>بنتابع اجدد العروض في اشهر المواقع و السوبرماركت </div></div>
+</div>
+
+
+<!-- card -->
+
+
+<!-- <div class="card" style="width:700px;height: 400px;">
+  <div >
+  <img class="card-img-top" src="data:image/png;base64,{{post.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.description}}</p>
+  </div>
+ 
+</div> </div> -->
+
+
+
+<!-- subscribe -->
+
+
+
+<!-- card -->
+<div class="card "*ngFor="let post of posts">
+  <img src="data:image/png;base64,{{post.image}}" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title}}</h5>
+    <p class="card-text">{{post.description}}</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
