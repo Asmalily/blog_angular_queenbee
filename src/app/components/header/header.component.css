@@ -11,13 +11,13 @@ height:min-content;
 
 }
 .nav-item{
-    margin-right: 80px;
+    margin-right: 20px;
 }
 .nav-link:hover {
     color: rgba(87, 75, 8, 0.314);
 }
 .navbar-nav {
-    margin: 1px -80px;
+    margin: 1px -121px;
 }
 .fa-brands{
     padding: 10px; float: left;
