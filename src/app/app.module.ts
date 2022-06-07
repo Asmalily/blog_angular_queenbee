@@ -8,18 +8,22 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { RedMoreComponent } from './components/red-more/red-more.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HousepgComponent } from './components/housepg/housepg.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    RedMoreComponent,
+    HousepgComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule
+    AppRoutingModule,HttpClientModule,FontAwesomeModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

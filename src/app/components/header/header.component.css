@@ -1,6 +1,6 @@
 .navbar{
     font-size: 18px;
-    width: 2154px;
+    width: 1815px;
     background-color: #f6f6f6;
     margin: 1px -23px;
     overflow-x: hidden;
@@ -17,7 +17,7 @@ height:min-content;
     color: rgba(87, 75, 8, 0.314);
 }
 .navbar-nav {
-    margin: 1px -121px;
+    margin: 1px 101px;
 }
 .fa-brands{
     padding: 10px; float: left;

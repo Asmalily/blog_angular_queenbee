@@ -10,7 +10,9 @@ import { Post } from 'src/app/interfaces/post';
 })
 export class HomeComponent implements OnInit {
 posts:Post[]=[]
+
   constructor(private postService:PostService) { }
+  
   getTasks(){
     this.postService.getPosts().subscribe({
       next:(res:any)=>{
@@ -22,7 +24,7 @@ posts:Post[]=[]
       }
     })
   }
-  
+
 
   ngOnInit(): void {
     this.getTasks()

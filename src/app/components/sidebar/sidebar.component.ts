@@ -1,4 +1,6 @@
+import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { Post } from 'src/app/interfaces/post';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
-  constructor() { }
+ posts:Post[]=[]
+ category = '';
+  constructor(private Router:ActivatedRoute) { }
 
   ngOnInit(): void {
   }
