@@ -124,3 +124,39 @@ h4{
 }
 
 
+/* gallery */
+Sarah Nasser
+	
+16:35 (1 hour ago)
+	
+to me
+/*products*/
+.bg-light {     
+  background-color: #e9eef5 !important;
+  margin: 30px -30px;
+  position: absolute;
+  width: 1355px;
+}
+
+.h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+}
+.h1,.h2,.h3,a,body,div,input,label,li,p
+{font-family:Roboto,sans-serif}a,body,div,input,label,li,p
+{font-size:17px!important;font-weight:300!important}
+
+.h2{font-size:28px!important;font-weight:400}
+
+.card-text {
+  width: 297px;
+  font-size: 29px;
+}
+.list-unstyled {
+font-size: 20px;
+}
+.card-img-top {
+  width: 219px;
+  margin: 1px 1px;
+}

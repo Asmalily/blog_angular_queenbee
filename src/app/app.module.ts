@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RedMoreComponent } from './components/red-more/red-more.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HousepgComponent } from './components/housepg/housepg.component';
+import {MatCardModule} from '@angular/material/card'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +24,10 @@ import { HousepgComponent } from './components/housepg/housepg.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,HttpClientModule,FontAwesomeModule
-  ],
+    AppRoutingModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    MatCardModule  ],
   providers: [PostService],
   bootstrap: [AppComponent]
 })
