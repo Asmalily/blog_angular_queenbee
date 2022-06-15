@@ -1,129 +1,135 @@
 <!-- carosel -->
 <div class="carousel ">
-  <div class="carousel--item one"><div class="textbox">
-    <h4 >
-    مراجعه منتجات </h4><span>بنعملك مراجعه لمنتجات جربناها </span> </div></div>
-  <div class="carousel--item two"><div class="textbox">
-    <h4 >
-    وصفات طعام </h4><span>وصفات سهله و سريعه و صحيه</span> </div></div>
-  <div class="carousel--item three"><div class="textbox">
-    <h4 >
-      عناية شخصية </h4><span></span>بنعرفك علي طرق و اساليب الاهتمام بنفسك </div></div>
-  <div class="carousel--item four"><div class="textbox">
-    <h4 >
-      عناية بالمنزل </h4><span></span>البيت دايما محتاج تنضيف و ترتيب بس كمان يكون بسهوله ! </div></div>
-  <div class="carousel--item five"><div class="textbox">
-    <h4 >
-  تسوق و عروض </h4>بنتابع اجدد العروض في اشهر المواقع و السوبرماركت </div></div>
+  <button class="carousel--item one" routerLink="reviews">
+    <div class="textbox">
+      <h4>
+        مراجعه منتجات </h4><span>بنعملك مراجعه لمنتجات جربناها </span>
+    </div>
+  </button>
+
+  <button class="carousel--item two" routerLink="food">
+    <div class="textbox">
+      <h4>
+        وصفات طعام </h4><span>وصفات سهله و سريعه و صحيه</span>
+    </div>
+  </button>
+  <button class="carousel--item three" routerLink="selfCare">
+    <div class="textbox">
+      <h4>
+        عناية شخصية </h4><span></span>بنعرفك علي طرق و اساليب الاهتمام بنفسك
+    </div>
+  </button>
+  <button class="carousel--item four" routerLink="house">
+    <div class="textbox">
+      <h4>
+        عناية بالمنزل </h4><span></span>البيت دايما محتاج تنضيف و ترتيب بس كمان يكون بسهوله !
+    </div>
+  </button>
+  <button class="carousel--item five" routerLink="offers">
+    <div class="textbox">
+      <h4>
+        تسوق و عروض </h4>بنتابع اجدد العروض في اشهر المواقع و السوبرماركت
+    </div>
+  </button>
 </div>
 
-<!-- 
+<div class="qoute" style=" width: 2000px;height: 200px;background-repeat: no-repeat;
+background-image:url(https://i.ibb.co/Vgm1NcM/Pink-Minimalist-Feminine-Professional-Marketing-Linked-In-Banner.png);">
+  <h3> أطهر الناس أعراقاً أحسنهم أخلاق</h3>
+</div>
 
- card --> -->
-<!-- <section class="crd">
-  <div class="buttons">
-  <button class="button2">تنظيم و تنظيف</button>
-    </div>
-  
-  <div class="card" style="width: 18rem;" *ngFor="let item of posts">
-      <h5 class="card-title">{{item.title}}</h5>
-      <img class="card-img-top" src="data:image/jpg;base64,{{item.image}}" alt="image">
+
+
+<div>
+  <h2>:احدث المقالات </h2>
+</div>
+
+
+<!-- card -->
+
+<div class="row row-cols-3 row-cols-2  ">
+  <div class="col mb-4 " *ngFor="let item of posts |slice:0:6">
+    <div class="card">
+      <img loading="lazy" src="data:image/jpg;base64,{{item.image}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">{{item.description}}</p>
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.summary}}</p>
+        <button routerLink="post/{{item._id}}" style="font-weight:bold" class="button btn btn-alert">إقــرأ
+          المزيـد</button>
+
+
       </div>
-      <button class="button3">لرؤية المزيد</button>
     </div>
-  </section> -->
+  </div>
+</div>
 
 
 
-  <!-- gallery -->
-  <!-- Start Featured Product -->
-  <section class="bg-light">
-    <div class="container py-5">
-        <div class="row text-center py-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">Featured Product</h1>
-                <p>
-                    Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident.
-                </p>
-            </div>
+<div>
+
+</div>
+
+
+
+<!-- newsletter -->
+
+<div class="row d-flex justify-content-center align-items-center rows">
+
+  <div class="col-md-6">
+
+
+    <div class="newsletter">
+
+
+      <div class="text-center">
+
+        <img src="https://i.imgur.com/Dh7U4bp.png" width="200">
+        <span class="d-block mt-3">سجل بياناتك ليصلك كل ما هو جديد عبر البريد الالكتروني</span>
+
+
+        <div class="mx-5">
+
+
+          <form class="input-group 
+          mb-3 mt-4" #subs="ngForm" (ngSubmit)="subScr(subs.value)">
+            <label for="email"> </label>
+            <input type="text" 
+            id="email" name="email"
+             #email="ngModel" 
+             required
+             email
+             ngModel class="form-control"
+              class="form-control" 
+              placeholder="Enter email" 
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+
+              <div class=" errors d-flex justify-content-center" *ngIf="email.touched && email.invalid">
+                <div *ngIf="email.errors?.['required']">
+                  *Email is required*
+                </div>
+                <div *ngIf="email.errors?.['email']">
+                  *Please enter valid email*
+                </div>
+              </div>
+
+            <button class="btn btn-danger border-rad"
+            
+            
+            [disabled]="subs.invalid"
+            >Subscribe</button>
+          </form>
+
+
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <a href="shop-single.html">
-                      <img src="assets/3.jpg" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$240.00</li>
-                        </ul>
-                        <a  class="h2 text-decoration-none text-dark">Gym Weight</a>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
-                        </p>
-                        <p class="text-muted">Reviews (24)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <a>
-                      <img src="assets/3.jpg" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                                <i class="text-muted fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$480.00</li>
-                        </ul>
-                        <a class="h2 text-decoration-none text-dark">Cloud Nike Shoes</a>
-                        <p class="card-text">
-                            Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
-                        </p>
-                        <p class="text-muted">Reviews (48)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <a>
-              <img src="assets/3.jpg" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-unstyled d-flex justify-content-between">
-                            <li>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                                <i class="text-warning fa fa-star"></i>
-                            </li>
-                            <li class="text-muted text-right">$360.00</li>
-                        </ul>
-                        <a class="h2 text-decoration-none text-dark">Summer Addides Shoes</a>
-                        <p class="card-text">
-                            Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
-                        </p>
-                        <p class="text-muted">Reviews (74)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+      </div>
+
     </div>
-</section>
-<!-- End Featured Product -->
+
+  </div>
+
+
+
+
+</div>

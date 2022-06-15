@@ -1,9 +1,13 @@
+
+*{
+    overflow: hidden;
+}
 .navbar{
-    font-size: 18px;
-    width: 1815px;
+    font-size: 16px;
+    width: 1820px;
     background-color: #f6f6f6;
-    margin: 1px -23px;
-    overflow-x: hidden;
+    margin: -10px -3px;
+    overflow-x:hidden;
 }
 .nav-link{
 color: black;
@@ -11,13 +15,13 @@ height:min-content;
 
 }
 .nav-item{
-    margin-right: 20px;
+    margin-right: 70px;
 }
 .nav-link:hover {
     color: rgba(87, 75, 8, 0.314);
 }
 .navbar-nav {
-    margin: 1px 101px;
+    margin: 1px 108px;
 }
 .fa-brands{
     padding: 10px; float: left;

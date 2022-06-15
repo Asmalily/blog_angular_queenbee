@@ -1,0 +1,28 @@
+<!-- <div class="card mt-5" *ngIf="posts">
+  <img class="card-img-top" src="data:image/jpg;base64,{{posts.image}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{posts.title}}</h5>
+    <p class="card-text">{{posts.description}}</p>
+
+  </div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col" *ngIf="posts">
+      <article class="single-post post-card">
+        <div class="post-header">
+          <div class="tag-wrap">
+          </div>
+          <h1 class="heading-large post-title">
+            {{posts.title}} </h1>
+          <div class="date-time">
+            <div> {{ myDate |date:'mediumDate'}} : تاريخ</div>
+          </div>
+          <div class="image-post  ">
+            <img style=" border-radius: 25px; height: 580px;" src="data:image/jpg;base64,{{posts.image}}" loading="lazy" alt="img ">
+          </div>
+
+          <p class="custom-excerpt">
+            {{posts.description}} </p>
+         
+            </div>

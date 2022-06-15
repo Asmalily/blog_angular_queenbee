@@ -4,6 +4,7 @@ import { Post } from 'src/app/interfaces/post';
 import { PostService } from 'src/app/services/post.service';
 import { catg } from 'src/app/interfaces/catg';
 import { DomSanitizer } from '@angular/platform-browser';
+import { User } from 'src/app/interfaces/user';
 
 @Component({
   selector: 'app-housepg',
@@ -13,7 +14,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class HousepgComponent implements OnInit {
 posts:Post[]=[];
 catList:catg[] ;
-selectedCatId:string='البيت';
+selectedCatId?:string='البيت';
+p:number=1
+myDate= Date.now()
+users:User[]=[]
+
 
 
   constructor( private postService:PostService,private sanitizer: DomSanitizer) { 
@@ -44,5 +49,6 @@ selectedCatId:string='البيت';
 
   ngOnInit(): void {
     this.getPosts()
+    
   }
 }

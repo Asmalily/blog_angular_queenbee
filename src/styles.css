@@ -1,4 +1,6 @@
 *{font-family: 'Lalezar', 'cursive';
 padding: 0px;
 height: max-content;
+overflow-x: hidden;
 }
+@import '~ngx-toastr/toastr';

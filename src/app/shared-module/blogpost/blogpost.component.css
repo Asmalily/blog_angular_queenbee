@@ -1,0 +1,39 @@
+.container {
+  margin-top: -300px;
+  justify-content: right;
+}
+
+.heading-large {
+  float: right;
+  margin-top: -130px;
+  font-size: 44px;
+  color: #565a5d;
+}
+.custom-excerpt {
+  width: 1200px;
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+    float: left;
+  text-align: right;
+  margin-left: -28px;
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+}
+
+
+.date-time {
+  float: right;
+  margin-top: -60px;
+  margin-left: 100px;
+  color: #e1a730;
+}
+.image-post {
+  margin-left: 77px;
+  opacity: 0.9;
+}
