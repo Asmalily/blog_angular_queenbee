@@ -15,7 +15,7 @@
     "serve:ssr": "node dist/QueenBee/server/main.js",
     "build:ssr": "ng build && ng run QueenBee:server",
     "prerender": "ng run QueenBee:prerender",
-    "heroku-postbuild": "ng build --configuration development&&gulp compress",
+    "heroku-postbuild": "ng build --configuration development",
     "postbuild": "gulp compress"
   },
   "private": true,
