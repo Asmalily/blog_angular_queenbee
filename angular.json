@@ -67,7 +67,7 @@
               "extractLicenses": true,
               "sourceMap": false,
               "namedChunks": false,
-              "serviceWorker": true,
+              "serviceWorker": false,
         "deleteOutputPath": true
             }
           },
