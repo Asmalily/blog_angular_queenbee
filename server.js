@@ -6,4 +6,4 @@ app.get ('*',(req,res)=>{
   res.sendFile('index.html',{root:'dist/QueenBee/'})
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 8080)
