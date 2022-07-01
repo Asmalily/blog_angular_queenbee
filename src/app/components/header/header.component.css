@@ -5,17 +5,17 @@
 .navbar{
     font-size: 16px;
     width: 1820px;
-    background-color: #f6f6f6;
+    background-color:#1D1B22;
     margin: -10px -3px;
     overflow-x:hidden;
 }
 .nav-link{
-color: black;
+color: rgb(255, 255, 255);
 height:min-content;
 
 }
 .nav-item{
-    margin-right: 70px;
+    margin-right: 90px;
 }
 .nav-link:hover {
     color: rgba(87, 75, 8, 0.314);
@@ -29,4 +29,11 @@ height:min-content;
 .social{
     padding-left: 10px;
     margin: 1px 36px;
+}
+@media only screen and (max-width: 767.98px) {
+    .social{display:none
+    }
+
+
+    
 }

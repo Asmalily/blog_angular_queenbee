@@ -1,56 +1,58 @@
 <!-- carosel -->
-<div class="carousel ">
-  <button class="carousel--item one" routerLink="reviews">
+<div class="carousel col ">
+
+  <button class="carousel--item one col-xs-3 col-md-2" routerLink="reviews" >
     <div class="textbox">
-      <h4>
+      <h4 class="row-2">
         مراجعه منتجات </h4><span>بنعملك مراجعه لمنتجات جربناها </span>
     </div>
   </button>
+  
 
   <button class="carousel--item two" routerLink="food">
     <div class="textbox">
-      <h4>
+      <h4 class="row-3">
         وصفات طعام </h4><span>وصفات سهله و سريعه و صحيه</span>
     </div>
   </button>
   <button class="carousel--item three" routerLink="selfCare">
     <div class="textbox">
-      <h4>
+      <h4 class="row-2">
         عناية شخصية </h4><span></span>بنعرفك علي طرق و اساليب الاهتمام بنفسك
     </div>
   </button>
   <button class="carousel--item four" routerLink="house">
     <div class="textbox">
-      <h4>
+      <h4 class="row-3">
         عناية بالمنزل </h4><span></span>البيت دايما محتاج تنضيف و ترتيب بس كمان يكون بسهوله !
     </div>
   </button>
   <button class="carousel--item five" routerLink="offers">
     <div class="textbox">
-      <h4>
+      <h4 class="row-2">
         تسوق و عروض </h4>بنتابع اجدد العروض في اشهر المواقع و السوبرماركت
     </div>
   </button>
-</div>
 
-<div class="qoute" style=" width: 2000px;height: 200px;background-repeat: no-repeat;
-background-image:url(https://i.ibb.co/Vgm1NcM/Pink-Minimalist-Feminine-Professional-Marketing-Linked-In-Banner.png);">
-  <h3> أطهر الناس أعراقاً أحسنهم أخلاق</h3>
+  
 </div>
 
 
 
-<div>
-  <h2>:احدث المقالات </h2>
-</div>
+
+
+
 
 
 <!-- card -->
-
-<div class="row row-cols-3 row-cols-2  ">
-  <div class="col mb-4 " *ngFor="let item of posts |slice:0:6">
+<div>
+  <h2>:احدث المقالات </h2>
+</div>
+<div class="row row-cols-3 row-cols-2   ">
+ 
+  <div class="col cardcol mb-4 " *ngFor="let item of posts |slice:0:6">
     <div class="card">
-      <img loading="lazy" src="data:image/jpg;base64,{{item.image}}" class="card-img-top" alt="...">
+      <img loading="lazy" src="data:image/jpg;base64,{{item.image}}" class="card-img-top d-block" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
         <p class="card-text">{{item.summary}}</p>
@@ -91,35 +93,24 @@ background-image:url(https://i.ibb.co/Vgm1NcM/Pink-Minimalist-Feminine-Professio
 
 
           <form class="input-group 
-          mb-3 mt-4" #subs="ngForm" (ngSubmit)="subScr(subs.value)">
+          mb-3 mt-4" #subs="ngForm" (ngSubmit)="subScr(subs.value) ">
             <label for="email"> </label>
-            <input type="text" 
-            id="email" name="email"
-             #email="ngModel" 
-             required
-             email
-             ngModel class="form-control"
-              class="form-control" 
-              placeholder="Enter email" 
-              aria-label="Recipient's username"
+            <input type="text" id="email" name="email" #email="ngModel" required email ngModel class="form-control"
+              class="form-control" placeholder="Enter email" aria-label="Recipient's username"
               aria-describedby="button-addon2">
 
-              <div class=" errors d-flex justify-content-center" *ngIf="email.touched && email.invalid">
-                <div *ngIf="email.errors?.['required']">
-                  *Email is required*
-                </div>
-                <div *ngIf="email.errors?.['email']">
-                  *Please enter valid email*
-                </div>
+            <div class=" errors d-flex justify-content-center" *ngIf="email.touched && email.invalid">
+              <div *ngIf="email.errors?.['required']">
+                *Email is required*
               </div>
+              <div *ngIf="email.errors?.['email']">
+                *Please enter valid email*
+              </div>
+            </div>
+            <button class="btn btn-danger border-rad" [disabled]="subs.invalid">Subscribe</button>
 
-            <button class="btn btn-danger border-rad"
-            
-            
-            [disabled]="subs.invalid"
-            >Subscribe</button>
+
           </form>
-
 
         </div>
 

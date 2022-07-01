@@ -1,6 +1,6 @@
 export interface Post {
   title?:string
-  description?:string
+  body?:string
   image?:File
   category?:string
   summary?:string

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/interfaces/post';
 
+
 @Component({
   selector: 'app-blogpost',
   templateUrl: './blogpost.component.html',
@@ -10,15 +11,17 @@ import { Post } from 'src/app/interfaces/post';
 })
 export class BlogpostComponent implements OnInit {
   itemId: any;
-   posts?: Post;
+   posts?: Post; 
    myDate= Date.now()
+   
 
   constructor(
     private route: ActivatedRoute,
     private postServ: PostService,
-    private router: Router
-  ) {}
-  id: string = this.route.snapshot.params['id'];
+    private router: Router) {}
+  id: string = this.route.snapshot.params['id'];   
+
+
 
   // getSingleTask(){
   //   this.postServ.getpostById(this.id).subscribe({
@@ -27,8 +30,13 @@ export class BlogpostComponent implements OnInit {
   //     }
   //   })
   // }
+
+
+
+
   ngOnInit(): void {
     // this.getSingleTask()
+
 
     this.route.params.subscribe((params) => {
       this.itemId = params['id'];

@@ -16,7 +16,6 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
 import { FoodpgComponent } from './components/pages/foodpg/foodpg.component';
 import { OfferspgComponent } from './components/pages/offerspg/offerspg.component';
 import { SelfcarepgComponent } from './components/pages/selfcarepg/selfcarepg.component';
-import { ReviewpgComponent } from './components/pages/reviewpg/reviewpg.component';
 import { NgxPaginationModule } from 'ngx-pagination'; // <-- import the module
 import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
@@ -24,6 +23,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WhorusComponent } from './components/header/whorus/whorus.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { SEOService } from './services/seo.service';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+
+
 
 @NgModule({
   declarations: [
@@ -37,16 +44,15 @@ import { WhorusComponent } from './components/header/whorus/whorus.component';
     FoodpgComponent,
     OfferspgComponent,
     SelfcarepgComponent,
-    ReviewpgComponent,
     WhorusComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,MatSidenavModule,MatIconModule,
     HttpClientModule,
-    FormsModule,
+    FormsModule,MatChipsModule,MatToolbarModule,MatListModule,
     NgxPaginationModule,
     ToastrModule.forRoot(),
     FontAwesomeModule,
