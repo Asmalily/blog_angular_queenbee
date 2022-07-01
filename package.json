@@ -15,7 +15,8 @@
     "serve:ssr": "node dist/QueenBee/server/main.js",
     "build:ssr": "ng build && ng run QueenBee:server",
     "prerender": "ng run QueenBee:prerender",
-    "heroku-postbuild": "ng build --configuration development"
+    "heroku-postbuild": "ng build --configuration development&&gulp compress",
+    "postbuild": "gulp compress"
   },
   "private": true,
   "dependencies": {
@@ -60,6 +61,7 @@
     "@types/express": "^4.17.0",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^14.15.0",
+    "gzipper": "^7.1.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

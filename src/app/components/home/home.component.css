@@ -148,22 +148,27 @@ img {
     width: 320px;padding: 10px;
   margin-left: -20px;}
     .newsletter{
-      margin-left: -10px!important;}
+      margin-left: -10px !important}
     
   
 }
 
 @media only screen and (max-width: 496px) {
- .row-cols-2 {
-width: 320px;padding: 10px; margin-left: -12px;}
-.newsletter{
-  margin-left: -10px!important;}
-
-
+ /* .row-cols-2 {
+width: 320px;padding: 10px; margin-left: -12px;} */
  
   .cardcol{
   
-    margin: 60px;overflow-x:visible !important;margin-top: 20px;}
+    margin: 50px;overflow-x:visible !important;margin-top: 20px;}
+
+    .newsletter{
+      margin: 40px;right: 20px;margin-left:100px ;}
+
+
+  .card {
+    width:130px;height: 470px;margin: -20px;
+  }
+    
 }
 
 
@@ -184,7 +189,7 @@ width: 320px;padding: 10px; margin-left: -12px;}
   }
  
   .newsletter{
-    margin-left: 150px!important;}
+    margin-left: 142px!important;}
   
 
 
