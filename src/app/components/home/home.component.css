@@ -223,7 +223,7 @@ h2{
 
 @media only screen and (max-width: 1024px)  {
   .carousel{
-    width: 100%;margin-left: -90px;margin-top: -40px ;
+    width: 89%;margin-left: -54px;margin-top: -40px ;
     
   
   }
@@ -249,4 +249,11 @@ h2{
   }
 
 
+}
+
+@media only screen and (max-width: 1456px) {
+
+
+
+  
 }

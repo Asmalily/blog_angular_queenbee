@@ -191,6 +191,22 @@ ol {
     --heading-medium: 3.4rem;
     --heading-small: 2.2rem;
   }
+  .navbar-logo {
+    display: none;
+  }
+  #navbar {
+    margin-left: 176px;
+    width: 82px;
+    font-size: 9px;
+    height: 2000px;
+  }
+  .navbar-item-inner {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  i {
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 1456px) {
   :root {
@@ -201,6 +217,20 @@ ol {
   }
   .view-width {
     width: 80%;
+  }
+
+  #navbar {
+    margin-left: 231px;
+    width: 78px;
+    font-size: 9px;
+    height: 2000px;
+  }
+  .navbar-item-inner {
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  i {
+    font-size: 17px;
   }
 }
 
@@ -218,8 +248,8 @@ ol {
     display: none;
   }
   #navbar {
-    margin-left: 120px;
-    width: 100px;
+    margin-left: 176px;
+    width: 82px;
     font-size: 9px;
     height: 2000px;
   }
