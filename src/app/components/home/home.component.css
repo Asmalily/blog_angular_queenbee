@@ -143,13 +143,24 @@ img {
 
 @media only screen and (max-width: 375px) {
   .carousel{
-    margin-left: -100px;width: 80%;
-  } .row-cols-2 {
+    margin-left: -86px !important;width: 89% !important;
+  } 
+  
+  .carousel--item{
+    width: 300px;
+  }
+
+.textbox{
+  width: 286px;margin-left:10px ;
+}
+  .row-cols-2 {
     width: 320px;padding: 10px;
   margin-left: -20px;}
-    .newsletter{
-      margin-left: -10px !important}
-    
+
+ .col-md-6{
+  width: 94%;margin-right: 130px;
+ }
+
   
 }
 

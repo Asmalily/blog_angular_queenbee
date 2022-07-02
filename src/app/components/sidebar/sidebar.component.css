@@ -294,8 +294,8 @@ ol {
 }
 @media only screen and (max-width: 496px) {
   #navbar {
-    margin-left: 27px;
-    width: 88px;
+    margin-left: 140px;
+    width: 77px;
     margin-top: -86px;
   }
   .navbar-item-inner {
@@ -316,8 +316,8 @@ ol {
 
 @media only screen and (max-width: 375px) {
   #navbar {
-    margin-left: 20px;
-    width: 87px;
+    margin-left: 311px;
+    width: 76px;
     font-size: 9px;
     margin-top: -59px;
   }

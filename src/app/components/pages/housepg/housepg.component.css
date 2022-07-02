@@ -1,17 +1,37 @@
-.card{
-  margin: 100px;align-items: center;
+.card {
+  margin: 100px;
+  align-items: center;
 }
-.col-md-6{
-  margin-top: -100px;width: 50%;margin-left: 340px;
+.col-md-6 {
+  margin-top: -100px;
+  width: 50%;
+  margin-left: 340px;
 }
 
-    pagination-controls{
-      margin-top: 200px;float: left;margin-left: 300px;
-    }
+pagination-controls {
+  margin-top: 200px;
+  float: left;
+  margin-left: 300px;
+}
 
+@media (min-width: 1024px) {
+  .col-md-6 {
+    margin-left: 74px;
+    width: 73%;
+  }
+}
 
+@media (min-width: 992px) and (max-width: 1024px) {
+  .col-md-6 {
+    margin-left: 74px;
+    width: 73%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {  .col-md-6 {
+  margin-left: 74px;
+  width: 73%;
+} }
 
-
-
-    
+@media only screen and (max-width: 496px) {
   
+}
