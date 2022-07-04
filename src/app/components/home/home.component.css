@@ -1,14 +1,11 @@
-
 .carousel {
-  margin-top: -20px;
+  margin-top: -9px;
   display: flex;
   gap: 0.9em;
-  width: 1250px;
-  left: 80px;
+  width: 1409px;
+  left: 20px;
   margin-left: 100px;
-  height: 540px; 
-
-
+  height: 540px;
 
   /* adds scrolling for the element: */
   overflow-x: scroll;
@@ -82,8 +79,8 @@ button {
 
 /* quote */
 h2 {
-  margin-left: 760px;
-  margin-top: 60px;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .qoute {
@@ -99,7 +96,7 @@ h3 {
 .card {
   width: 400px;
   height: 400px;
-  margin-right: 70px;
+  margin-right: -9px;
   margin-top: 30px;
   float: right;
   transition: -webkit-transform 0.3s ease;
@@ -115,7 +112,7 @@ a {
 img {
   height: 200px;
 }
-.card-text{
+.card-text {
   text-overflow: ellipsis;
 }
 
@@ -128,143 +125,160 @@ img {
   margin-left: 100px;
   color: #e1a730;
 }
-.row-cols-1{
-  width: 500px;height: 500px;
+.row-cols-1 {
+  width: 500px;
+  height: 500px;
 }
 
-.row-cols-2{
+.row-cols-2 {
   margin-left: 20px;
 }
-
-
 
 /* responsive */
 /* mobile */
 
 @media only screen and (max-width: 375px) {
-  .carousel{
-    margin-left: -86px !important;width: 89% !important;
-  } 
-  
-  .carousel--item{
+  .carousel {
+    margin-left: -86px !important;
+    width: 89% !important;
+  }
+
+  .carousel--item {
     width: 300px;
   }
 
-.textbox{
-  width: 286px;margin-left:10px ;
-}
+  .textbox {
+    width: 286px;
+    margin-left: 10px;
+  }
   .row-cols-2 {
-    width: 320px;padding: 10px;
-  margin-left: -20px;}
+    width: 320px;
+    padding: 10px;
+    margin-left: -20px;
+  }
 
- .col-md-6{
-  width: 94%;margin-right: 130px;
- }
-
-  
+  .col-md-6 {
+    width: 94%;
+    margin-right: 130px;
+  }
 }
 
 @media only screen and (max-width: 496px) {
- /* .row-cols-2 {
+  /* .row-cols-2 {
 width: 320px;padding: 10px; margin-left: -12px;} */
- 
-  .cardcol{
-  
-    margin: 50px;overflow-x:visible !important;margin-top: 20px;}
 
-    .newsletter{
-      margin: 40px;right: 20px;margin-left:100px ;}
+  .carousel {
+    margin-left: -8px !important;
+  }
 
+  .cardcol {
+    margin: 50px;
+    overflow-x: visible !important;
+    margin-top: 20px;
+  }
 
   .card {
-    width:130px;height: 470px;margin: -20px;
+    width: 150px;
+    height: 470px;
+    margin: -36px !important;
   }
-    
+
+  .newsletter {
+   margin: 120px;
+  }
+
 }
 
-
-@media only screen and (max-width: 767.98px) 
- { 
-  .carousel{
-    margin-top: -900px;width: 100%;margin-left: -100px;
+@media only screen and (max-width: 767.98px) {
+  .carousel {
+    margin-top: -900px;
+    width: 100%;
+    margin-left: -100px;
   }
-
-
 
   .card {
-    width:330px;height: 470px;margin: -20px;
+    width: 330px;
+    height: 470px;
+    margin: -20px;
   }
 
-  .cardcol{
-    margin: 20px;overflow-x:visible !important;margin-top: 20px;
+  .cardcol {
+    margin: 20px;
+    overflow-x: visible !important;
+    margin-top: 20px;
   }
- 
-  .newsletter{
-    margin-left: 142px!important;}
-  
 
-
- }
+  .newsletter {
+    margin-left: 142px !important;
+  }
+}
 
 /* tablet */
 
-@media only screen and (max-width:991.98px){
-  .carousel{
-  width: 100%;margin-left: -90px;margin-top: -40px ;
-
-}
-
-.card {
-  width: 371px;;height: 340px;float: right;margin-left: -93px;padding: 10px;
-}
-.card-text{
-font-size:12px;direction: rtl;
-;}
-
-.newsletter{
-    margin-left: -50px;width: fit-content;font-size: 12px;
-}
-
-h2{
-  margin-left: 30px;text-align: center;
-}
-}
-
-
-
-@media only screen and (max-width: 1024px)  {
-  .carousel{
-    width: 89%;margin-left: -54px;margin-top: -40px ;
-    
-  
-  }
-
-  .cardcol{
-    margin-left: 70px;padding: 20px;
+@media only screen and (max-width: 991.98px) {
+  .carousel {
+    width: 100%;
+    margin-left: -90px;
+    margin-top: -40px;
   }
 
   .card {
-    width:300px;height: 340px;float: left;
+    width: 371px;
+    height: 340px;
+    float: right;
+    margin-left: -93px;
+    padding: 10px;
   }
-  .card-text{
-  font-size:12px;direction: rtl;
-  ;}
-  
-   
-  .newsletter{
-      margin-left: 10px;width: fit-content;font-size: 12px;
-  }
-  
-  h2{
-    margin-left: 30px;text-align: center;
+  .card-text {
+    font-size: 12px;
+    direction: rtl;
   }
 
+  .newsletter {
+    margin-left: -50px;
+    width: fit-content;
+    font-size: 12px;
+  }
 
+  h2 {
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel {
+    width: 89%;
+    margin-left: -54px;
+    margin-top: -40px;
+  }
+
+  .cardcol {
+    margin-left: 70px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 300px;
+    height: 340px;
+    float: left;
+  }
+  .card-text {
+    font-size: 12px;
+    direction: rtl;
+  }
+
+  .newsletter {
+    margin-left: 10px;
+    width: fit-content;
+    font-size: 12px;
+  }
+
+  h2 {
+    margin-left: 30px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1456px) {
-
-
-
-  
 }

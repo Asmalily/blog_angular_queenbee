@@ -16,7 +16,7 @@
 
 /* Paragraphs */
 p {
-  margin: 0;
+  margin: 0px;
   font-size: var(--paragraph);
 }
 /* Links */
@@ -109,7 +109,7 @@ ol {
   margin: 0;
   margin-top: 90px;
   padding: 0;
-  list-style-type: none;
+  list-style-type:none;
   font-size: 17px;
   color: white;
 }
@@ -191,9 +191,9 @@ ol {
     --heading-medium: 3.4rem;
     --heading-small: 2.2rem;
   }
-  .navbar-logo {
+  /* .navbar-logo {
     display: none;
-  }
+  } */
   #navbar {
     margin-left: 176px;
     width: 82px;
@@ -294,8 +294,8 @@ ol {
 }
 @media only screen and (max-width: 496px) {
   #navbar {
-    margin-left: 140px;
-    width: 77px;
+    margin-left: 432px;
+    width: 76px;
     margin-top: -86px;
   }
   .navbar-item-inner {
@@ -314,7 +314,7 @@ ol {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
   #navbar {
     margin-left: 311px;
     width: 76px;
